@@ -1,13 +1,15 @@
 "use client";
-
 import Navbar from "../../components/Navbar";
+import PriceCard from "../../components/PriceCard";
 
 export default function Home() {
   return (
     <div>
+      {/* Navbar Components */}
       <Navbar></Navbar>
-      <div className="bg-green-200">
-        <h2>ana sayfa</h2>
+      <div>
+        {/* PriceCard Components */}
+        <PriceCard></PriceCard>
       </div>
     </div>
   );
