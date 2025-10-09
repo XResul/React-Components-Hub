@@ -1,4 +1,5 @@
 "use client";
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import PriceCard from "../../components/PriceCard";
 
@@ -7,10 +8,11 @@ export default function Home() {
     <div>
       {/* Navbar Components */}
       <Navbar></Navbar>
-      <div>
+      <div className="mt-12">
         {/* PriceCard Components */}
         <PriceCard></PriceCard>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
