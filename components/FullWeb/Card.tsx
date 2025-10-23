@@ -11,22 +11,13 @@ const Card = () => {
   return (
     <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
       {images.map((img) => (
-        <div
+        <Image
           key={img.id}
-          className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden cursor-pointer"
-        >
-          <div className="relative w-full h-48">
-            <Image
-              src={img.src}
-              alt={img.title}
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="p-3">
-            <h2 className="text-gray-800 font-semibold text-lg">{img.title}</h2>
-          </div>
-        </div>
+          src={img.src}
+          alt={img.title}
+          width={120}
+          height={120}
+        />
       ))}
     </div>
   );

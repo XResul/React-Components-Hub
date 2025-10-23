@@ -11,9 +11,8 @@ const Page = () => {
       {/* Ana içerik */}
       <div className="flex-1 p-6 ml-64">
         {/* Üstten biraz boşluk ekleyebiliriz */}
-        <div className="mt-4">
-          <Card />
-        </div>
+
+        <Card />
       </div>
     </div>
   );
