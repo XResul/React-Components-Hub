@@ -5,13 +5,11 @@ const images = [
   { id: 1, src: "/doga1.jpg", title: "Doğa 1" },
   { id: 2, src: "/doga2.jpg", title: "Doğa 2" },
   { id: 3, src: "/doga3.jpg", title: "Doğa 3" },
-  { id: 4, src: "/doga4.jpg", title: "Doğa 4" },
-  { id: 5, src: "/doga5.jpg", title: "Doğa 5" },
 ];
 
 const Card = () => {
   return (
-    <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
       {images.map((img) => (
         <div
           key={img.id}
